@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Codejam-canvas</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">CodeJam - Pallete</h1>
+        <button class="header-navigation"></button>
+        <button class="header-options"></button>
+    </header>
+    <main class="app">
+        <div class="app-tools panel">
+            <ul class="panel-section panel-list">
+                <li class="panel-list_item bucket">Paint bucket</li>
+                <li class="panel-list_item dropper">Choose color</li>
+            </ul>
+            <ul class="panel-section panel-list">
+                <li class="panel-list_item move">Move</li>
+                <li class="panel-list_item transform">Transform</li>
+            </ul>
+        </div>
+        <div class="app-color panel">
+            <ul class="panel-section panel-list">
+                <li class="panel-list_item">Current color</li>
+                <li class="panel-list_item">Prev color</li>
+            </ul>
+            <ul class="panel-section panel-list">
+                <li class="panel-list_item">red</li>
+                <li class="panel-list_item">blue</li>
+            </ul>
+        </div>
+        <div class="app-resolutions panel">
+            <ul class="panel-list">
+                <li class="panel-list_item">
+                    <input type="radio" name="size_select" id="size_small" selected>
+                    <label for="size_small">4*4</label>
+                </li>
+                <li class="panel-list_item">
+                    <input type="radio" name="size_select" id="size_medium">
+                    <label for="size_medium">32*32</label>
+                </li>
+                <li class="panel-list_item">
+                    <input type="radio" name="size_select" id="size_large">
+                    <label for="size_large">256*256</label>
+                </li>
+            </ul>
+        </div>
+        <canvas class="app-canvas" width="512" height="512">Your browser don't support canvas</canvas>
+    </main>
+</body>
+
+</html>

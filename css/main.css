@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header-title {
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.87);
+    order: 1;
+}
+
+.header-navigation {
+    order: 0;
+    background: url(../img/icon-menu.svg) no-repeat center;
+    width: 18px;
+    height: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.header-options {
+    order: 2;
+    width: 4px;
+    height: 16px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(../img/icon-options.svg) no-repeat center;
+}
+
+.app {
+    display: grid;
+    /* grid-template-columns: 228px 512px; */
+    /* justify-content: space-between; */
+    /* grid-template-areas:
+        "tools canvas sizes"
+        "colors canvas ."; */
+    row-gap: 92px;
+    padding: 79px 29px 0;
+}
+
+.app-tools {}
+
+.app-color {}
+
+.app-resolutions {}
+
+.panel {
+    width: 228px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.panel-list {
+    list-style: none;
+}
+
+.panel-list_item {
+    padding: 12px 0 12px 57px;
+    margin: 0 0 0 16px;
+}
+
+.app-color .panel-list_item {
+    padding-left: 40px;
+}
+
+.bucket {
+    background: url(../img/icon-bucket.svg) no-repeat left;
+}
+
+.dropper {
+    background: url(../img/icon-dropper.svg) no-repeat left;
+}
+
+.move {
+    background: url(../img/icon-move.svg) no-repeat left;
+}
+
+.transform {
+    background: url(../img/icon-transform.svg) no-repeat left;
+}
+
+.app-canvas {}
+
+.panel-section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.panel-section:last-child {
+    border-bottom: none;
+}
